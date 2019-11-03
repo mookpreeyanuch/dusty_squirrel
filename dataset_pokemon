@@ -1,0 +1,11 @@
+import pandas as pd
+
+# pokemon.csv
+file_id='1RIOQHcV9ONhqMN1TRYpHIwHlxgsGcVqs'
+df = pd.read_csv(f'https://drive.google.com/uc?export=download&id={file_id}')
+df.to_csv('pokemon.csv', index=False)
+
+# combats.csv
+file_id='19Tn_tduj1Ec8W7gzN4wLUrNH51FDell5'
+df = pd.read_csv(f'https://drive.google.com/uc?export=download&id={file_id}')
+df.to_csv('combats.csv', index=False)
